@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtChill - HR Profile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://public-resources.creatie.ai/ai/tailwind_config/tailwind-config.min.js" data-color="#ff66c4" data-border-radius='rounded-full'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;800&family=Blinker:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .no-scrollbar {
+            overflow-x: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+        }
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col items-center relative" style="border-radius: 2rem; background-image: url('https://i.postimg.cc/sDCHBY3F/screenshot-20240808-145620.png'); background-size: 100% auto; background-repeat: no-repeat; background-color: #f2e9e4;">
+    <div class="w-full h-[130px] bg-[#F9F5F3] flex items-center justify-between px-16">
+        <a href="home.html">
+            <img src="https://i.postimg.cc/5NzmY7s1/Artistry-Heals-removebg-preview.png" alt="Logo" class="w-58 h-24">
+        </a>
+        <div class="flex space-x-8">
+            <button class="text-[#5b352e] hover:text-opacity-80">
+                <i class="fas fa-globe text-2xl"></i>
+            </button>
+            <img src="https://i.postimg.cc/nrsfy05S/screenshot-20240808-102244.png" alt="Avatar" class="w-8 h-8 rounded-full">
+        </div>
+    </div>
+    <div class="w-[1170px] bg-white rounded-3xl overflow-hidden mx-auto mb-0 relative shadow-[20px_20px_0_0_#ff66c4]" style="height: 85vh;">
+        <div class="px-24 py-16 h-full flex flex-col justify-between items-center">
+            <h1 class="text-4xl font-extrabold text-center text-[#5b352e] mb-4 whitespace-nowrap" style="font-family: 'League Spartan', sans-serif; font-weight: 800;">User Profile</h1>
+            
+            <!-- User Profile Section -->
+            <div class="flex flex-col items-center">
+                <img src="https://i.postimg.cc/nrsfy05S/screenshot-20240808-102244.png" alt="User Avatar" class="w-24 h-24 rounded-full mb-6">
+                <h2 class="text-2xl font-bold text-[#5b352e] mb-2" style="font-family: 'Blinker', sans-serif;">John Doe</h2>
+                <p class="text-lg text-gray-600 mb-4" style="font-family: 'Open Sans', sans-serif;">Corporate HR</p>
+
+                <!-- Editable User Details -->
+                <div class="w-full max-w-lg">
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-gray-700" style="font-family: 'Open Sans', sans-serif;">Email Address</label>
+                        <input type="email" id="email" value="johndoe@example.com" class="w-full p-4 rounded-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50 text-lg">
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-sm font-medium text-gray-700" style="font-family: 'Open Sans', sans-serif;">Phone Number</label>
+                        <input type="text" id="phone" value="+1234567890" class="w-full p-4 rounded-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50 text-lg">
+                    </div>
+                    <div class="mb-6">
+                        <label for="department" class="block text-sm font-medium text-gray-700" style="font-family: 'Open Sans', sans-serif;">Organization/School</label>
+                        <input type="text" id="organization" value="HR" class="w-full p-4 rounded-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50 text-lg">
+                    </div>
+                    <div class="mb-6">
+                        <label for="location" class="block text-sm font-medium text-gray-700" style="font-family: 'Open Sans', sans-serif;">Location</label>
+                        <input type="text" id="location" value="New York, NY" class="w-full p-4 rounded-full border-gray-300 focus:border-custom focus:ring focus:ring-custom focus:ring-opacity-50 text-lg">
+                    </div>
+                </div>
+            </div>
+            <!-- Action Buttons -->
+            <div class="flex justify-between w-full">
+                <a class="py-3 px-8 rounded-full text-[#E0C89D] font-bold hover:bg-[#E0C89D] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#E0C89D] transition-colors duration-200 text-lg" href="dashboard.html">&lt; Back to Dashboard</a>
+                <button class="py-3 px-8 rounded-full bg-custom text-white font-bold hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom transition-colors duration-200 text-lg" onclick="saveProfile()">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function saveProfile() {
+            // Sample save function, replace with actual save logic
+            alert("Profile saved successfully!");
+        }
+    </script>
+    <!-- Footer -->
+    <footer class="w-full py-6 bg-[#5b352e] text-white text-center" style="font-family: 'Open Sans', sans-serif;">
+        <p>&copy; 2024 ArtChill. All rights reserved.</p>
+        <p>Follow us on 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.facebook.com/profile.php?id=61562706217997">Facebook</a>, 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.instagram.com/artchillsg">Instagram</a>.
+        </p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>

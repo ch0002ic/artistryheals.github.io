@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtChill - Community</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://public-resources.creatie.ai/ai/tailwind_config/tailwind-config.min.js" data-color="#ff66c4" data-border-radius='rounded-full'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Blinker:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .no-scrollbar {
+            overflow-x: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+        }
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col items-center relative" style="border-radius: 2rem; background-image: url('https://i.postimg.cc/sDCHBY3F/screenshot-20240808-145620.png'); background-size: 100% auto; background-repeat: no-repeat; background-color: #f2e9e4;">
+    <div class="w-full h-[130px] bg-[#F9F5F3] flex items-center justify-between px-16">
+        <a href="home.html">
+            <img src="https://i.postimg.cc/5NzmY7s1/Artistry-Heals-removebg-preview.png" alt="Logo" class="w-58 h-24">
+        </a>
+        <div class="flex items-center space-x-20">
+            <a href="home.html" class="text-[#5b352e] hover:text-opacity-80 text-xl" style="font-family: 'Open Sans', sans-serif;">Home</a>
+            <a href="about.html" class="text-[#5b352e] hover:text-opacity-80 text-xl" style="font-family: 'Open Sans', sans-serif;">About Us</a>
+            <a href="exercise.html" class="text-[#5b352e] hover:text-opacity-80 text-xl" style="font-family: 'Open Sans', sans-serif;">Exercises</a>
+            <a href="album.html" class="text-[#5b352e] hover:text-opacity-80 text-xl" style="font-family: 'Open Sans', sans-serif;">Album</a>
+            <a class="text-[#5b352e] font-bold hover:text-opacity-80 text-xl" style="font-family: 'Open Sans', sans-serif;">Community</a>
+            <a href="terms.html" class="text-[#5b352e] hover:text-opacity-80 text-xl" style="font-family: 'Open Sans', sans-serif;">Terms</a>
+        </div>
+        <div class="flex space-x-8">
+            <button class="text-[#5b352e] hover:text-opacity-80">
+                <i class="fas fa-globe text-2xl"></i>
+            </button>
+            <a>
+                <img src="https://i.postimg.cc/nrsfy05S/screenshot-20240808-102244.png" alt="Avatar" class="w-8 h-8 rounded-full">
+            </a>
+        </div>
+    </div>
+    <div class="w-[1170px] bg-white rounded-3xl overflow-hidden mx-auto mb-10 relative shadow-[20px_20px_0_0_#ff66c4]" style="min-height: 80vh;">
+        <div class="px-24 py-16 h-full flex flex-col justify-start items-center">
+            <h1 class="text-4xl font-extrabold text-center text-[#5b352e] mb-8 whitespace-nowrap" style="font-family: 'League Spartan', sans-serif; font-weight: 800;">Community Hub</h1>
+            <p class="text-center text-gray-600 mb-6 text-lg" style="font-family: 'Open Sans', sans-serif;">Connect with others, share experiences, and grow together</p>
+            <div class="grid grid-cols-3 gap-12 w-full">
+                <!-- Individual User Section -->
+                <div class="bg-[#f2e9e4] p-6 rounded-3xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-[#5b352e] mb-4" style="font-family: 'League Spartan', sans-serif;">Individuals</h2>
+                    <p class="text-gray-700 mb-4" style="font-family: 'Open Sans', sans-serif;">Express your emotions, join discussions, and find support from others.</p>
+                    <a class="py-3 px-6 rounded-full bg-custom text-white font-bold hover:bg-[#e85e9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom transition-colors duration-200" href="#">Join the Conversation</a>
+                </div>
+                <!-- Trainer Section -->
+                <div class="bg-[#f2e9e4] p-6 rounded-3xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-[#5b352e] mb-4" style="font-family: 'League Spartan', sans-serif;">Trainers</h2>
+                    <p class="text-gray-700 mb-4" style="font-family: 'Open Sans', sans-serif;">Lead sessions, share insights, and help others on their expressive journey.</p>
+                    <a class="py-3 px-6 rounded-full bg-custom text-white font-bold hover:bg-[#e85e9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom transition-colors duration-200" href="#">Start a Session</a>
+                </div>
+                <!-- Corporate HR Section -->
+                <div class="bg-[#f2e9e4] p-6 rounded-3xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-[#5b352e] mb-4" style="font-family: 'League Spartan', sans-serif;">Corporate HR</h2>
+                    <p class="text-gray-700 mb-4" style="font-family: 'Open Sans', sans-serif;">Enhance employee well-being, organize workshops, and support mental health.</p>
+                    <a class="py-3 px-6 rounded-full bg-custom text-white font-bold hover:bg-[#e85e9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom transition-colors duration-200" href="#">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w-full py-6 bg-[#5b352e] text-white text-center" style="font-family: 'Open Sans', sans-serif;">
+        <p>&copy; 2024 ArtChill. All rights reserved.</p>
+        <p>Follow us on 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.facebook.com/profile.php?id=61562706217997">Facebook</a>, 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.instagram.com/artchillsg">Instagram</a>.
+        </p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>

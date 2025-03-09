@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtChill - Results</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://public-resources.creatie.ai/ai/tailwind_config/tailwind-config.min.js" data-color="#ff66c4" data-border-radius='rounded-full'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Blinker:wght@700&family=Patrick+Hand:wght@400&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Handlee';
+            src: url('path-to-Handlee-font.woff2') format('woff2');
+            /* Adjust the path to your actual font file */
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col items-center justify-end relative" style="background-image: url('https://i.postimg.cc/KYbSRTc9/screenshot-20240809-150501.png'); background-size: 100% auto; background-repeat: no-repeat; background-color: #f2e9e4;">
+    <div class="w-full h-[10px] flex items-center justify-between px-16">
+        <a href="home.html">
+            <img src="https://i.postimg.cc/5NzmY7s1/Artistry-Heals-removebg-preview.png" alt="Logo" class="w-58 h-24">
+        </a>
+        <div class="flex space-x-8">
+            <button class="text-[#5b352e] hover:text-opacity-80">
+                <i class="fas fa-globe text-2xl"></i>
+            </button>
+            <img src="https://i.postimg.cc/nrsfy05S/screenshot-20240808-102244.png" alt="Avatar" class="w-8 h-8 rounded-full">
+        </div>
+    </div>
+    <div class="mx-auto" style="height: 78vh;">
+        <div class="px-24 py-24 flex flex-col justify-between items-center">
+            <div class="flex w-full mt-8">
+                <div class="w-full pl-80">
+                    <p class="text-2xl text-white mt-8 font-thin" style="font-family: 'Open Sans', sans-serif;">Emotion Wheel</p>
+                    <p class="text-4xl text-white mt-4 font-bold" style="font-family: 'Open Sans', sans-serif;">Your drawing is successfully uploaded</p>
+                    <div class="mt-8 flex items-center justify-between">
+                        <div>
+                            <p class="text-2xl font-bold text-black mb-2 mt-12" style="font-family: 'Open Sans', sans-serif;">Rate this exercise</p>
+                            <div class="flex">
+                                <i class="fas fa-star text-3xl text-gray-100 rounded-full cursor-pointer hover:text-yellow-300 transition-colors duration-200 mr-1"></i>
+                                <i class="fas fa-star text-3xl text-gray-100 rounded-full cursor-pointer hover:text-yellow-300 transition-colors duration-200 mr-1"></i>
+                                <i class="fas fa-star text-3xl text-gray-100 rounded-full cursor-pointer hover:text-yellow-300 transition-colors duration-200 mr-1"></i>
+                                <i class="fas fa-star text-3xl text-gray-100 rounded-full cursor-pointer hover:text-yellow-300 transition-colors duration-200 mr-1"></i>
+                                <i class="fas fa-star text-3xl text-gray-100 rounded-full cursor-pointer hover:text-yellow-300 transition-colors duration-200"></i>
+                            </div>
+                        </div>
+                        <button id="shareButton" class="text-white rounded-full py-3 px-16 flex items-center mt-12" style="background-color: #849bff;">
+                            <i class="fas fa-share-alt mr-2"></i>
+                            <span class="font-bold">Share to Community</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Modal -->
+    <div id="shareModal" class="fixed inset-0 flex items-center justify-center z-50 hidden bg-black bg-opacity-50">
+        <div class="bg-white rounded-lg p-8 w-[500px]">
+            <p class="text-xl font-bold mb-4">Share to Community</p>
+            <p class="text-gray-700 mb-4">Click on any of the icons below to share your drawing with your colleagues/friends/peers and encourage them to join us at ArtChill!</p>
+            <div class="flex justify-between mb-4">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://ai.stey.ai/artchill" target="_blank" class="text-blue-600 text-3xl"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://x.com/share?url=https://ai.stey.ai/artchill&text=Hi%2C%20friends!%20Come%20join%20me%20at%20ArtChill%20to%20help%20you%20express%20your%20thoughts%20and%20feelings%20better!" target="_blank" class="text-blue-400 text-3xl"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ai.stey.ai/artchill&text=Hi%2C%20friends!%20Come%20join%20me%20at%20ArtChill%20to%20help%20you%20express%20your%20thoughts%20and%20feelings%20better!" target="_blank" class="text-blue-700 text-3xl"><i class="fab fa-linkedin"></i></a>
+                <a href="https://reddit.com/submit?url=https://ai.stey.ai/artchill&title=Hi%2C%20friends!%20Come%20join%20me%20at%20ArtChill%20to%20help%20you%20express%20your%20thoughts%20and%20feelings%20better!" target="_blank" class="text-orange-600 text-3xl"><i class="fab fa-reddit-square"></i></a>
+                <a href="https://pinterest.com/pin/create/button/?url=https://ai.stey.ai/artchillmedia=&description=Hi%2C%20friends!%20Come%20join%20me%20at%20ArtChill%20to%20help%20you%20express%20your%20thoughts%20and%20feelings%20better!" target="_blank" class="text-red-600 text-3xl"><i class="fab fa-pinterest-square"></i></a>
+            </div>
+            <button id="closeModal" class="text-white bg-gray-500 px-4 py-2 rounded-lg">Close</button>
+        </div>
+    </div>
+    <script>
+        const shareButton = document.getElementById('shareButton');
+        const shareModal = document.getElementById('shareModal');
+        const closeModal = document.getElementById('closeModal');
+        shareButton.addEventListener('click', () => {
+            shareModal.classList.remove('hidden');
+        });
+        closeModal.addEventListener('click', () => {
+            shareModal.classList.add('hidden');
+        });
+        window.addEventListener('click', (e) => {
+            if (e.target == shareModal) {
+                shareModal.classList.add('hidden');
+            }
+        });
+    </script>
+    <!-- Footer -->
+    <footer class="w-full py-6 bg-[#5b352e] text-white text-center" style="font-family: 'Open Sans', sans-serif;">
+        <p>&copy; 2024 ArtChill. All rights reserved.</p>
+        <p>Follow us on 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.facebook.com/profile.php?id=61562706217997">Facebook</a>, 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.instagram.com/artchillsg">Instagram</a>.
+        </p>
+    </footer>
+    <script src="bundle.js"></script>
+    <script>
+        // Add star rating functionality
+        const stars = document.querySelectorAll('.fa-star');
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                stars.forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.remove('text-gray-100');
+                        s.classList.add('text-yellow-300');
+                    } else {
+                        s.classList.remove('text-yellow-300');
+                        s.classList.add('text-gray-100');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

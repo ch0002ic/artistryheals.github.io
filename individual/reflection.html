@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtChill - Reflection</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://public-resources.creatie.ai/ai/tailwind_config/tailwind-config.min.js" data-color="#ff66c4" data-border-radius='rounded-full'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Blinker:wght@700&family=Patrick+Hand:wght@400&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Handlee';
+            src: url('path-to-Handlee-font.woff2') format('woff2');
+            /* Adjust the path to your actual font file */
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col items-center relative" style="border-radius: 2rem; background-image: url('https://i.postimg.cc/sDCHBY3F/screenshot-20240808-145620.png'); background-size: 100% auto; background-repeat: no-repeat; background-color: #f2e9e4;">
+    <div class="w-full h-[130px] bg-[#F9F5F3] flex items-center justify-between px-16">
+        <a href="home.html">
+            <img src="https://i.postimg.cc/5NzmY7s1/Artistry-Heals-removebg-preview.png" alt="Logo" class="w-58 h-24">
+        </a>
+        <div class="flex space-x-8">
+            <button class="text-[#5b352e] hover:text-opacity-80">
+                <i class="fas fa-globe text-2xl"></i>
+            </button>
+            <a href="profile.html">
+                <img src="https://i.postimg.cc/nrsfy05S/screenshot-20240808-102244.png" alt="Avatar" class="w-8 h-8 rounded-full">
+            </a>
+        </div>
+    </div>
+    <div class="bg-[#ffc7ce] rounded-3xl px-16 py-8 z-10 relative" style="transform: translateY(50%);">
+        <h1 class="text-6xl font-extrabold text-center text-[#5b352e] whitespace-nowrap" style="font-family: 'League Spartan', sans-serif; font-weight: 800;">Reflection question 1</h1>
+    </div>
+    <div class="w-[1170px] bg-white rounded-3xl overflow-hidden mx-auto mb-16 relative shadow-[20px_20px_0_0_#ff66c4]" style="height: 70vh;">
+        <div class="px-24 py-16 h-full flex flex-col justify-between items-center">
+            <div class="flex w-full mt-2">
+                <div class="w-2/3 mt-2">
+                    <p class="mt-16 text-4xl text-gray-600 tracking-widest" style="font-family: 'Patrick Hand', sans-serif; color:#1a4b93">What is the first emotion you wrote down? Why? where does this emotion come from?</p>
+                </div>
+                <div class="w-2/5 -mb-12">
+                    <img src="https://i.postimg.cc/XqfPTwPM/screenshot-20240808-121125.png" alt="Step 1 Illustration" class="p-12 rounded-lg">
+                </div>
+            </div>
+            
+            <div class="flex w-full">
+                <textarea placeholder="Type your thoughts here" rows="4" class="w-full p-4 border-2 border-custom rounded-lg focus:ring-custom focus:border-custom text-gray-700 text-3xl" style="font-family: 'Patrick Hand', sans-serif;"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between items-center w-4/5 -mt-8 mb-16 -ml-20">
+        <a class="flex1 px-8 py-3 rounded-full text-[#D0916A] font-bold hover:bg-[#D0916A] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D0916A] transition-colors duration-200 text-lg self-start" href="javascript:history.back()">&lt; Back</a>
+        <a class="mx-auto ml-90 py-3 rounded-full border-2 border-custom text-custom font-bold hover:bg-custom hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom transition-colors duration-200 text-lg w-1/6 flex items-center justify-center" href="reflection2.html">Next</a>
+    </div>
+    <!-- Footer -->
+    <footer class="w-full py-6 bg-[#5b352e] text-white text-center" style="font-family: 'Open Sans', sans-serif;">
+        <p>&copy; 2024 ArtChill. All rights reserved.</p>
+        <p>Follow us on 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.facebook.com/profile.php?id=61562706217997">Facebook</a>, 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.instagram.com/artchillsg">Instagram</a>.
+        </p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>

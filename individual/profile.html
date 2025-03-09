@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtChill - User Profile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://public-resources.creatie.ai/ai/tailwind_config/tailwind-config.min.js" data-color="#ff66c4" data-border-radius='rounded-full'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;800&family=Blinker:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .no-scrollbar {
+            overflow-x: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+        }
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center min-h-screen flex flex-col items-center relative" style="border-radius: 2rem; background-image: url('https://i.postimg.cc/sDCHBY3F/screenshot-20240808-145620.png'); background-size: 100% auto; background-repeat: no-repeat; background-color: #f2e9e4;">
+    <div class="w-full h-[130px] bg-[#F9F5F3] flex items-center justify-between px-16">
+        <a href="home.html">
+            <img src="https://i.postimg.cc/5NzmY7s1/Artistry-Heals-removebg-preview.png" alt="Logo" class="w-58 h-24">
+        </a>
+        <div class="flex space-x-8">
+            <button class="text-[#5b352e] hover:text-opacity-80">
+                <i class="fas fa-globe text-2xl"></i>
+            </button>
+            <img src="https://i.postimg.cc/nrsfy05S/screenshot-20240808-102244.png" alt="Avatar" class="w-8 h-8 rounded-full">
+        </div>
+    </div>
+    <div class="w-[1170px] bg-white rounded-3xl overflow-hidden mx-auto mb-0 relative shadow-[20px_20px_0_0_#ff66c4]" style="height: 85vh;">
+        <div class="px-24 py-16 h-full flex flex-col justify-between items-center">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-[#5b352e]" style="font-family: 'League Spartan', sans-serif; font-weight: 800;">Your Profile</h1>
+                <p class="text-lg text-gray-600" style="font-family: 'Open Sans', sans-serif;">Hello, [User Name]</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 w-full mt-8">
+                <!-- Section 1: Emotional Journey -->
+                <div class="bg-[#f2e9e4] p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold mb-4 text-[#5b352e]" style="font-family: 'League Spartan', sans-serif;">Your Emotional Journey</h2>
+                    <ul class="list-disc pl-5">
+                        <li class="text-lg text-gray-700" style="font-family: 'Open Sans', sans-serif;">Emotion Logged: Happy on [Date]</li>
+                        <li class="text-lg text-gray-700" style="font-family: 'Open Sans', sans-serif;">Emotion Logged: Anxious on [Date]</li>
+                        <li class="text-lg text-gray-700" style="font-family: 'Open Sans', sans-serif;">Emotion Logged: Calm on [Date]</li>
+                        <!-- Add more emotions as needed -->
+                    </ul>
+                </div>
+                <!-- Section 2: Recommended Exercises -->
+                <div class="bg-[#f2e9e4] p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold mb-4 text-[#5b352e]" style="font-family: 'League Spartan', sans-serif;">Recommended Exercises</h2>
+                    <ul class="list-disc pl-5">
+                        <li class="text-lg text-gray-700" style="font-family: 'Open Sans', sans-serif;">Mindful Drawing: Express Your Joy</li>
+                        <li class="text-lg text-gray-700" style="font-family: 'Open Sans', sans-serif;">Calming Colors: Reduce Anxiety</li>
+                        <li class="text-lg text-gray-700" style="font-family: 'Open Sans', sans-serif;">Mandala Creation: Find Your Center</li>
+                        <!-- Add more exercises as needed -->
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between w-full mt-10">
+                <a class="py-3 px-8 rounded-full text-[#E0C89D] font-bold hover:bg-[#E0C89D] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#E0C89D] transition-colors duration-200 text-lg" href="javascript:history.back()">&lt; Back</a>
+                <a class="py-3 px-8 rounded-full border-2 border-custom text-custom font-bold hover:bg-custom hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom transition-colors duration-200 text-lg" href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w-full py-6 bg-[#5b352e] text-white text-center" style="font-family: 'Open Sans', sans-serif;">
+        <p>&copy; 2024 ArtChill. All rights reserved.</p>
+        <p>Follow us on 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.facebook.com/profile.php?id=61562706217997">Facebook</a>, 
+            <a class="text-[#ff66c4] hover:text-opacity-80" href="https://www.instagram.com/artchillsg">Instagram</a>.
+        </p>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+</html>
