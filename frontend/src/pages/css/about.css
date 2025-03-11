@@ -1,0 +1,11 @@
+.dark-filter {
+  filter: brightness(0.9);
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.opacity-0 {
+  opacity: 0;
+}

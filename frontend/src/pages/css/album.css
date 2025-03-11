@@ -1,0 +1,16 @@
+/* album.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.react-photo-album--image {
+  animation-fill-mode: forwards !important;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+

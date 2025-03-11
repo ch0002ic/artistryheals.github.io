@@ -1,0 +1,33 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 1000;
+}
+
+.active-link {
+  font-weight: bold;
+  color: #000; /* Change to your desired active color */
+}
+
+/* navbar.css */
+.navbar-dropdown {
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+
+
+/* Optional: Add mobile menu animation */
+@media (max-width: 768px) {
+  [role="mobile-menu"] {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+}

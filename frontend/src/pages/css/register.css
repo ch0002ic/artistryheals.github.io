@@ -1,0 +1,63 @@
+/* Add this to your CSS file */
+.date-input {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* Remove default styling for Safari */
+  -moz-appearance: none; /* Remove default styling for Firefox */
+  background-color: #f2e9e4; /* Match the background color */
+  border: 1px solid #ccc; /* Match the border style */
+  border-radius: 9999px; /* Match the rounded style */
+  padding: 0.5rem 1rem; /* Match the padding */
+  font-size: 1rem; /* Match the font size */
+  color: #5b352e; /* Match the text color */
+  width: 100%; /* Full width */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Match the shadow */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.date-input:focus {
+  border-color: #5b352e; /* Change border color on focus */
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 0 3px rgba(91, 53, 46, 0.2); /* Add focus shadow */
+}
+
+.custom-calendar .react-datepicker__month-dropdown-container,
+.custom-calendar .react-datepicker__year-dropdown-container {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-calendar select {
+  background-color: #f2e9e4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  color: #5b352e;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.custom-calendar select:focus {
+  outline: none;
+  border-color: #5b352e;
+}
+
+.custom-calendar .react-datepicker__month-dropdown-container select,
+.custom-calendar .react-datepicker__year-dropdown-container select {
+  background-color: #f2e9e4 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 0.25rem 0.5rem !important;
+  font-size: 1rem !important;
+  color: #5b352e !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+.custom-calendar .react-datepicker__month-dropdown-container select:focus,
+.custom-calendar .react-datepicker__year-dropdown-container select:focus {
+  outline: none !important;
+  border-color: #5b352e !important;
+}

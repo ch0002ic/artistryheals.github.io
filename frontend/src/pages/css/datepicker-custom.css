@@ -1,0 +1,21 @@
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown {
+  background-color: white; /* Set a readable background color */
+  color: rgb(255, 255, 255); /* Set a readable text color */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+}
+
+.react-datepicker__year-dropdown:hover,
+.react-datepicker__month-dropdown:hover {
+  background-color: #f0f0f0; /* Optional: Add a hover effect */
+}
+
+.react-datepicker__year-option,
+.react-datepicker__month-option {
+  color: black; /* Ensure options are readable */
+}
+
+.react-datepicker__year-option:hover,
+.react-datepicker__month-option:hover {
+  background-color: #e6e6e6; /* Optional: Add a hover effect for options */
+}
